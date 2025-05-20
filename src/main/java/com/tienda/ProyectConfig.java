@@ -14,6 +14,9 @@ public class ProyectConfig implements WebMvcConfigurer {
     public void addViewControllers(ViewControllerRegistry registro){
         registro.addViewController("/").setViewName("index");
          registro.addViewController("/ejemplo2").setViewName("ejemplo2");
+         registro.addViewController("/multimedia").setViewName("multimedia");
+         registro.addViewController("/iframes").setViewName("iframes");
+        
     }
     /* El siguiente método se utilizar para publicar en la nube, independientemente  */
     @Bean
